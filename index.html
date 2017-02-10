@@ -9,7 +9,7 @@
   <body>
 <!--    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a></p>-->
   <header class="main-header">
-     <div class="container">
+     <div class="container clearfix">
          <nav class="main-navigation">
              <img src="img/Logo.jpg" alt="логотип магазина" height="64">
              <ul>
@@ -24,27 +24,25 @@
                  </li>
              </ul>
          </nav>
-      <div class="user-block">
+          <div class="user-block">
           <a href="#">лупа</a>
           <a class="login" href="#">Вход</a>
           <a  class="basket" href="#">Пусто</a>
       </div>
-      <div class="header-contact">
+          <div class="header-contact">
           <p>С 10 до 20, ежедневно<br>8 812 450-25-25</p>
       </div>
      </div>
   </header>  
-  <main>
-      <div class="container">
-      <section class="main-top">
+  <main class="container">
+      <section class="main-top clearfix">
          <h1>Крем-брюле и пломбир с малиновым джемом</h1>
-          <img src="img/big-photo.jpg" alt="крем-брюле и пломбир" width="1200" height="2416">
           <form class="top" action="#" method="get">
               <button type="submit"><img src="img/top-button.jpg" width="282" height="67" alt="btn"></button>
 <!--              добавить листалку-->
           </form>
       </section>
-       <section class="banner">
+       <section class="banner clearfix">
           <section class="left">
               <h2>Малинка даром!</h2>
               <p>При покупке 2 кг любого фруктового мороженного, добавим в ваш заказ банку малинового варенья бесплатно.</p>
@@ -62,7 +60,7 @@
                </form>
           </section>
        </section>
-        <section class="assortment hit">
+        <section class="assortment hit clearfix">
          <div class="assortment hit-item">
             <img src="img/hit.jpg" alt="logo-hit" width="61" height="61">
              <img src="img/ice-1.jpg" alt="мороженое с апельсиновым джемом" width="267" height="267">
@@ -90,20 +88,17 @@
         </section>
          <section class="features">
             <h3>Магазин Глейси-это онлайн и офлайн магазин по продаже мороженного собственного производства на развес</h3>
-             <img src="img/features-fon.png" alt="pattern" width="1150" height="500">
              <p><img src="img/ice%20cream.png" alt="" width="49" height="49">Все наше мороженное изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
              <p><img src="img/foliage.png" alt="листик" width="49" height="49">Для приготовления мороженного используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
              <p><img src="img/cow.png" alt="корова" width="49" height="49">Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
              <p><img src="img/%20thermometer.png" alt="градусник" width="49" height="49">Доставка нашего мороженного до заказчиков осуществляется в специальном термопаке, который не дает мороженному растаять в пути и позволяет сохранить превосходный вкус.</p>
          </section>
-         <section class="blog">
+         <section class="blog clearfix">
              <section class="blog-left">
-                <img src="img/left-fon.png" alt="морожено-фон" width="560" height="220">
                  <p>Новое в нашем блоге</p>
                   <a href="#">10 способов сервировки фруктовых щербетов к столу</a>
              </section>
              <section class="blog-right">
-                 <img src="img/right-fon.png" alt="фон-рассылка" width="560" height="220">
                  <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно=)</p>
                  <form class="appointment-form" action="#" method="get">
                      
@@ -113,13 +108,18 @@
                  </form>
              </section>
          </section>
-          <section class="maps">
-              <img src="img/maps.png" alt="карта" width="1200" height="430">
+          <section class="maps clearfix">
+               <div class="index-content">
+               <p>Адрес главного офиса и офлайн магазина:<br><b>ул. Большая Конюшенная<br>19/8, Санкт-Петербург</b></p>
+                <p>Для заказов по телефону<br><b>8 812 450-25-25</b><br>(с 10 до 20 ежедневно)</p>
+                <form action="#" method="get">
+                    <button>Форма обратной связи</button>
+                </form>
+                </div>
           </section>
-      </div>
   </main>    
  <footer class="main-footer">
-     <div class="container">
+     <div class="container clearfix">
          <section class="footer-social">
               <a class="social-btn social-btn-tv" href="#">Твиттер</a>
                <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
@@ -151,6 +151,12 @@
  </footer> 
     </body>
 </html>      
+               
+                 
+             
+          
+      
+      
           
            
            

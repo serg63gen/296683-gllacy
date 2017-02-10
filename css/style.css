@@ -1,10 +1,148 @@
-body{
-    min-width: 1200px;
-  background:#f3dcdc;
+ html,
+body {
+  min-width: 1200px;
+  min-height: 2416px;
+  margin: 0;
+  padding: 0;
     font-weight: 700;
   font-size: 14px;
   line-height: 24px;
   font-family: "Roboto", "Arial", sans-serif;
   color: #ffffff;
+}   
+body{
+  background:url("../img/fon-1.png") no-repeat 50% 0;
+    
 }
+.clearfix::after {
+  content: "";
+
+  display: table;
+  clear: both;
+}
+.container {
+  width: 1146px;
+  padding: 0 10px;
+    margin: 0 auto;
+}
+/*header*/
+.main-header{
+    margin-bottom: 25px;
+}
+.main-navigation{
+    border: 1px solid black;
+    float: left;
+    width: 800px;
+    min-height: 103px;
+}
+.user-block{
+    border: 1px solid black;
+    float: right;
+    width: 300px;
+    min-height: 50px;
+    margin-bottom:3px;
+}
+.header-contact{
+    border: 1px solid black; 
+    float: right;
+    width: 300px;
+    min-height: 50px;
+}
+/*main   */
+.main-top{
+    border: 1px solid black; 
+    min-height: 500px;
+    margin-bottom: 25px;
+}
+.banner{
+    border: 1px solid black;
+    margin-bottom: 25px;
+}
+.left{
+    float: left;
+    width: 560px;
+    min-height: 229px;
+}
+.right{
+    float: right;
+    width: 560px;
+    min-height: 229px;
+}
+.assortment{
+   margin-bottom: 25px;
+}
+.hit-item{
+    float: left;
+    width: 267px;
+    margin-right: 26px;
+}
+.hit-item:last-child {
+  margin-right: 0;
+}
+.features{
+    border: 1px solid black;
+    min-height: 410px;
+    margin-bottom: 25px;
+}
+.blog{
+    min-height: 320px;
+    margin-bottom: 25px;
+}
+  
+.blog-left{
+    border: 1px solid black;
+    float: left;
+    width: 560px;
+}
+.blog-right{
+    border: 1px solid black;
+    float: right;
+    width: 560px;
+}
+.maps{
+    background: url("../img/maps.png") no-repeat 50% 50% red;
+    width: 1200px;
+    margin-bottom: 25px;
+} 
+/*footer*/
+.main-footer{
+    border: 1px solid black; 
+margin-top: 25px;
+padding-top: 60px;
+  padding-bottom: 40px;
+}
+.footer-social{
+    border: 1px solid black;
+    float: left;
+    width: 265px;
+    margin-right: 26px;
+}
+.footer-info{
+    border: 1px solid black;
+    float: left;
+    width: 560px;
+}
+.footer-copyright{
+    border: 1px solid black;
+    float: right;
+    width: 265px;
+} 
+.footer-copyright:last-child{
+    margin-right: 0;
+
+  
+    
+    
+        
+    
+}
+    
+    
+   
+
+    
+    
+
+  
+    
     
