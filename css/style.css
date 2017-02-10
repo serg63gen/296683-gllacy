@@ -11,8 +11,9 @@ body {
   color: #ffffff;
 }   
 body{
-  background:url("../img/fon-1.png") no-repeat 50% 0;
-    
+  background:
+    url("../img/maps.png") no-repeat 50% 90%,
+    url("../img/fon-1.png") no-repeat 50% 0;
 }
 .clearfix::after {
   content: "";
@@ -100,10 +101,14 @@ body{
     width: 560px;
 }
 .maps{
-    background: url("../img/maps.png") no-repeat 50% 50% red;
-    width: 1200px;
     margin-bottom: 25px;
-} 
+}
+.index-content{
+    border: 1px solid black;
+    float: right;
+    width: 300px;
+    margin-right: 50px;
+}
 /*footer*/
 .main-footer{
     border: 1px solid black; 
@@ -136,6 +141,48 @@ padding-top: 60px;
         
     
 }
+/* CATALOG_HTML   */
+.catalog{
+    background: url("../img/fon-1.png") no-repeat 50% 0;
+}
+.filter{
+    border: 1px solid  black;
+    float: left;
+    width: 880px;
+    margin-bottom: 25px;
+}
+.assortment{
+    border: 1px solid  black;
+    float: left;
+    margin-left: 0 auto;
+    margin-right: 0 auto;
+    margin-bottom: 25px;
+    width: inherit;
+    min-height: 1077px;
+}
+.assortment-item{
+    float: left;
+    margin-right: 26px;
+    width: 267px;
+    min-height: 342px;
+} 
+.assortment-item:nth-child(4){
+    margin-right: 0;
+}
+.assortment-item:nth-child(8){
+    margin-right: 0;
+}
+.assortment-item:nth-child(12){
+    margin-right: 0;
+}
+.flipping{
+    float: right;
+    width: 200px;
+}  
+
+    
+
+    
     
     
    
