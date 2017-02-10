@@ -69,9 +69,7 @@ body{
     width: 560px;
     min-height: 229px;
 }
-.assortment{
-   margin-bottom: 25px;
-}
+
 .hit-item{
     float: left;
     width: 267px;
@@ -151,7 +149,7 @@ padding-top: 60px;
     width: 880px;
     margin-bottom: 25px;
 }
-.assortment{
+.hit{
     border: 1px solid  black;
     float: left;
     margin-left: 0 auto;
@@ -179,6 +177,10 @@ padding-top: 60px;
     float: right;
     width: 200px;
 }  
+   
+    
+   
+
 
     
 
