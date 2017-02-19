@@ -2,18 +2,26 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
      <link rel="stylesheet" type="text/css" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css">
     <title>Catalog-gllacy</title>
 </head>
 <body class="catalog">
-    <header class="main-header">
+         <header class="main-header">
      <div class="container clearfix">
-         <nav class="main-navigation">
-             <img src="img/Logo.jpg" alt="logo" height="64">
-             <ul>
-                 <li>
-                     <a href="#">Каталог</a>
+          <nav class="catalog main-navigation">
+             <a href="../index.html"><img class="header-logo" src="img/Logo.png" alt="логотип магазина" height="64" width="154"></a>
+             <ul class="top-menu">
+                 <li class="catalog-top">
+                     <a href="../catalog.html">Каталог</a>
+                     <ul class="sub-menu">
+                         <li><a href="#">Новинки</a></li>
+                         <li><a href="../gllacy/img">Сливочное</a></li>
+                         <li><a href="#">Щербеты</a></li>
+                         <li><a href="#">Фруктовый лед</a></li>
+                         <li><a href="#">Меларин</a></li>
+                     </ul>
                  </li>
                  <li>
                      <a href="#">Доставка и оплата</a>
@@ -23,37 +31,44 @@
                  </li>
              </ul>
          </nav>
-      <div class="user-block">
-          <a href="#">лупа</a>
-          <a class="login" href="#">Вход</a>
-          <a  class="basket" href="#">Пусто</a>
-      </div>
-      <div class="header-contact">
-          <p>С 10 до 20, ежедневно<br>8 812 450-25-25</p>
+          <div class="user-block">
+                <a class="Magnifier " href="#"></a>
+                  <a class="login" href="#">Вход</a>
+                  <a  class="basket" href="#">Пусто</a>
+              <p>С 10 до 20, ежедневно<br><span>8 812 450-25-25</span></p>
       </div>
      </div>
-  </header>  
+  </header> 
    <main class="container">
        <div class="container clearfix">
        <nav class="Breadcrumbs">
            <ul>
-               <li><a href="#">Главная</a></li>
+               <li><a href="../index.html">Главная</a></li>
                <li><a href="#">Каталог</a></li>
                <li><a href="#" class="current">Сливочное</a></li>
            </ul>
        </nav>
         <section class="filter clearfix">
             <h1>Сливочное мороженное</h1>
-            <form action="#" method="get">
+        <form action="../index.html" method="get">
+            <div class="select">
                     <p>Сортировка:</p>
                     <select name="#" size="1">
-                      <option>По популярности</option>
-                      <option>Пункт 2</option>
+                      <option>по популярности</option>
+                       <option>по популярности</option>
+                      <option>сначала недорогие</option>
+                      <option>сначала дорогие</option>
+                      <option>по жирности</option>
+                      
                     </select>
+             </div>
+            <div class="range">
                     <p>Цена: 100 руб - 500 руб</p>
                     <label>
                         <input type="range" min="0" max="500" step="10" value="10">
                     </label>
+             </div>
+            <div class="fat">
                         <p>Жирность:</p>
                         <label>
                             <input type="radio" name="questions" value="0%">0%
@@ -67,31 +82,34 @@
                         <label>
                             <input type="radio" name="questions" value="выше 30%">выше 30%
                         </label>
-                    <p>Наполнители:</p>
-                    <label>
-                        <input type="checkbox" name="choice">шоколадные
-                    </label>
-                    <label>
-                        <input type="checkbox" name="choice">сахарные присыпки
-                    </label>
-                    <label>
-                        <input type="checkbox" name="choice">фрукты
-                    </label>
-                    <label>
-                        <input type="checkbox" name="choice">сиропы
-                    </label>
-                    <label>
-                        <input type="checkbox" name="choice">джемы
-                    </label>
-                    <label>
-                        <input type="submit" value="Применить">
-                    </label>
-                </form>
+                        </div>
+                    <div class="fillers">
+                        <p>Наполнители:</p>
+                            <label>
+                                 <p><input type="checkbox" checked  name="choice">шоколадные</p>
+                           </label>
+                           <label>
+                                <p><input type="checkbox" name="choice">сахарные присыпки</p>
+                            </label>
+                            <label>
+                                <p><input type="checkbox" name="choice">фрукты</p>
+                            </label>
+                            <label>
+                                <p><input type="checkbox" name="choice">сиропы</p>
+                            </label>
+                            <label>
+                                <p><input type="checkbox" name="choice" >джемы</p>
+                            </label>
+                            <label>
+                            <input type="submit" value="Применить">
+                            </label>
+                </div>
+            </form>
         </section>
          <section class="assortment  clearfix">
             <div class="assortment-item">
                 <img src="img/ice-1.jpg" alt="мороженое с апельсиновым джемом" width="267" height="267">
-                <b>310₽/кг</b> 
+                <b>310₽/кг </b>
                  <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
             </div>
             <div class="assortment-item">
@@ -171,30 +189,25 @@
                 <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
          </section>
          <section class="footer-info">
-            <img src="#" alt="логотип-сердечко" width="15" height="13">
-             <ul>
-                 <li>
-                     <a href="#">Для поставщиков</a>
-                 </li>
-                 <li>
-                     <a href="#">Наши документы</a>
-                 </li>
-                 <li>
-                     <a href="#">О призводстве</a>
-                 </li>
-                 <li>
-                     <a href="#">Экологические стандарты</a>
-                 </li>
-             </ul>
+                     <a class="one" href="#">Для поставщиков</a>
+                     <a class="three" href="#">Наши документы</a>
+                     <a class="two" href="#">О призводстве</a>
+                     <a class="four" href="#">Экологические стандарты</a>
          </section>
          <section class="footer-copyright">
-<!--            логотип ссылка или фото-->
-            <p>Сделано в<a href="#">HTML Academy</a>© 2017</p>
+<img src="img/logofooter.png" alt="" width="108" height="38">
+             <p>Сделано в <a href="#">HTML Academy</a> © 2017</p>
          </section>
      </div>
  </footer> 
 </body>
 </html>
+                   
+                    
+                    
+                            
+                    
+
                 
                 
            

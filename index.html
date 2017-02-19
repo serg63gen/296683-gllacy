@@ -2,19 +2,32 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css">
     <title>HTML Academy: Глейси</title>
   </head>
   <body>
-<!--    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a></p>-->
+
+     <input type="radio" id="btn-1" name="toggle" checked>
+    <input type="radio" id="btn-2" name="toggle">
+    <input type="radio" id="btn-3" name="toggle">
+    <div class="site-wrapper">
+      <div class="content-wrapper">
   <header class="main-header">
      <div class="container clearfix">
          <nav class="main-navigation">
-             <img src="img/Logo.jpg" alt="логотип магазина" height="64">
-             <ul>
-                 <li>
-                     <a href="#">Каталог</a>
+             <img class="header-logo" src="img/Logo.png" alt="логотип магазина" height="64" width="154">
+             <ul class="top-menu">
+                 <li class="catalog-top">
+                     <a href="../catalog.html">Каталог</a>
+                     <ul class="sub-menu">
+                         <li><a href="#">Новинки</a></li>
+                         <li><a href="#">Сливочное</a></li>
+                         <li><a href="#">Щербеты</a></li>
+                         <li><a href="#">Фруктовый лед</a></li>
+                         <li><a href="#">Меларин</a></li>
+                     </ul>
                  </li>
                  <li>
                      <a href="#">Доставка и оплата</a>
@@ -25,73 +38,92 @@
              </ul>
          </nav>
           <div class="user-block">
-          <a href="#">лупа</a>
-          <a class="login" href="#">Вход</a>
-          <a  class="basket" href="#">Пусто</a>
-      </div>
-          <div class="header-contact">
-          <p>С 10 до 20, ежедневно<br>8 812 450-25-25</p>
+                <a class="Magnifier " href="#"></a>
+                  <a class="login" href="#">Вход</a>
+                  <a  class="basket" href="#">Пусто</a>
+              <p>С 10 до 20, ежедневно<br><span>8 812 450-25-25</span></p>
       </div>
      </div>
   </header>  
+    <div class="slider">
+          <div class="slide" id="slide1">
+            <div class="slide-title">Крем-брюле и пломбир<br> с малиновым джемом</div>
+            <a class="slide-btn" href="#">Давайте оба!</a>
+          </div>
+          <div class="slide" id="slide2">
+            <div class="slide-title">Шоколадный пломбир и лимонный сорбет</div>
+            <a class="slide-btn" href="#">Давайте оба!</a>
+          </div>
+          <div class="slide" id="slide3">
+            <div class="slide-title">Пломбир с помадкой и клубничный щербет</div>
+            <a class="slide-btn" href="#">Давайте оба!</a>
+          </div>
+          <div class="slider-controls">
+            <label for="btn-1"></label>
+            <label for="btn-2"></label>
+            <label for="btn-3"></label>
+          </div>
+        </div>
+      </div>
+    </div>         
   <main class="container">
-      <section class="main-top clearfix">
-         <h1>Крем-брюле и пломбир с малиновым джемом</h1>
-          <form class="top" action="#" method="get">
-              <button type="submit"><img src="img/top-button.jpg" width="282" height="67" alt="btn"></button>
-<!--              добавить листалку-->
-          </form>
-      </section>
        <section class="banner clearfix">
           <section class="left">
               <h2>Малинка даром!</h2>
               <p>При покупке 2 кг любого фруктового мороженного, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-               <img src="img/raspberry.jpg" alt="фото малины" width="560" height="229">
-               <form class="appointment-form" action="#" method="get">
+               <form class="#" action="../catalog.html" method="get">
                    <button type="submit">Хочу варенье!</button>
                </form>
           </section>
           <section class="right">
              <h2>Шоколадки даром!</h2>
              <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
-              <img src="img/chocolate.jpg" alt="фото шоколадной крошки" width="560" height="229">
-              <form class="appointment-form" action="#" method="get">
+             
+              <form class="#" action="#" method="get">
                    <button type="submit">Хочу шоколадки!</button>
                </form>
           </section>
        </section>
         <section class="hit4 clearfix">
-         <div class="hit-item">
+         <div class="hit-item1">
             <img src="img/hit.jpg" alt="logo-hit" width="61" height="61">
-             <img src="img/ice-1.jpg" alt="мороженое с апельсиновым джемом" width="267" height="267">
-             <b>310₽/кг</b>
+             <b>310₽<span>/кг</span></b>
              <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
          </div>
-         <div class="hit-item">
+            
+         <div class="hit-item2">
             <img src="img/hit.jpg" alt="logo-hit" width="61" height="61">
-             <img src="img/ice-2.jpg" alt="мороженое сливочно-кофейное " width="267" height="267">
-             <b>380₽/кг</b>
+             <b>380₽<span>/кг</span></b>
              <a href="#">Сливочно-кофейное с кусочками шоколада</a>
          </div>
-         <div class="hit-item">
+             
+         <div class="hit-item3">
              <img src="img/hit.jpg" alt="logo-hit" width="61" height="61">
-              <img src="img/ice-3.jpg" alt="сливочно-клубничное мороженое" width="267" height="267">
-              <b>355₽/кг</b>
+             
+              <b>355₽<span>/кг</span></b>
               <a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
          </div>
-         <div class="hit-item">
+         <div class="hit-item4">
             <img src="img/hit.jpg" alt="logo-hit" width="61" height="61">
-             <img src="img/ice-4.jpg" alt="мороженое крем-брюле" width="267" height="267">
-             <b>415₽/кг</b>
+             <b>415₽<span>/кг</span></b>
              <a href="#">Сливочное крем-брюле с карамельной подливкой</a>
          </div>
         </section>
+            
          <section class="features">
             <h3>Магазин Глейси-это онлайн и офлайн магазин по продаже мороженного собственного производства на развес</h3>
-             <p><img src="img/ice%20cream.png" alt="" width="49" height="49">Все наше мороженное изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
-             <p><img src="img/foliage.png" alt="листик" width="49" height="49">Для приготовления мороженного используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
-             <p><img src="img/cow.png" alt="корова" width="49" height="49">Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
-             <p><img src="img/%20thermometer.png" alt="градусник" width="49" height="49">Доставка нашего мороженного до заказчиков осуществляется в специальном термопаке, который не дает мороженному растаять в пути и позволяет сохранить превосходный вкус.</p>
+            <div class="tl">
+             <img src="img/ice%20cream.png" alt="" width="49" height="49"><p>Все наше мороженное изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
+             </div>
+             <div class="tr">
+             <img src="img/cow.png" alt="корова" width="49" height="49"><p>Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
+             </div>
+             <div class="bl">
+             <img src="img/foliage.png" alt="листик" width="49" height="49"><p>Для приготовления мороженного используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
+             </div>
+             <div class="br">
+             <img src="img/%20thermometer.png" alt="градусник" width="49" height="49"><p>Доставка нашего мороженного до заказчиков осуществляется в специальном термопаке, который не дает мороженному растаять в пути и позволяет сохранить превосходный вкус.</p>
+             </div>
          </section>
          <section class="blog clearfix">
              <section class="blog-left">
@@ -100,11 +132,11 @@
              </section>
              <section class="blog-right">
                  <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно=)</p>
-                 <form class="appointment-form" action="#" method="get">
-                     
-                     <input type="Email" name="email" value="Электронная почта">
-                     
-                     <button type="submit"><img src="img/button.png" alt="btn" width="131" height="47"></button>
+                 <form class="blog-form" action="#" method="get" id="date">
+                     <label>
+                     <input type="Email" name="email" value="электронная почта">
+                     </label>
+                         <button type="submit" form="date">Отправить</button>
                  </form>
              </section>
          </section>
@@ -113,7 +145,7 @@
                <p>Адрес главного офиса и офлайн магазина:<br><b>ул. Большая Конюшенная<br>19/8, Санкт-Петербург</b></p>
                 <p>Для заказов по телефону<br><b>8 812 450-25-25</b><br>(с 10 до 20 ежедневно)</p>
                 <form action="#" method="get">
-                    <button>Форма обратной связи</button>
+                    <button class="find-back" type="submit">Форма обратной связи</button>
                 </form>
                 </div>
           </section>
@@ -127,56 +159,96 @@
                 <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
          </section>
          <section class="footer-info">
-            <img src="#" alt="heart" width="15" height="13">
-             <ul>
-                 <li>
-                     <a href="#">Для поставщиков</a>
-                 </li>
-                 <li>
-                     <a href="#">Наши документы</a>
-                 </li>
-                 <li>
-                     <a href="#">О призводстве</a>
-                 </li>
-                 <li>
-                     <a href="#">Экологические стандарты</a>
-                 </li>
-             </ul>
+                     <a class="one" href="#">Для поставщиков</a>
+                     <a class="three" href="#">Наши документы</a>
+                     <a class="two" href="#">О призводстве</a>
+                     <a class="four" href="#">Экологические стандарты</a>
          </section>
          <section class="footer-copyright">
-<!--            логотип ссылка или фото-->
-             <p>Сделано в<a href="#">HTML Academy</a>© 2017</p>
+<img src="img/logofooter.png" alt="" width="108" height="38">
+             <p>Сделано в <a href="#">HTML Academy</a> © 2017</p>
          </section>
      </div>
  </footer> 
+  <div class="modal-content">
+      <button class="modal-content-close" type="button" title="Закрыть"></button>
+      <form class="login-form" action="#" method="post">
+          <label>
+              <input class="user-email" type="email" name="email">
+          </label>
+          <label>
+              <input class="user-password" type="password" name="password">
+          </label>
+          <a class="restore" href="#">Забыли пароль?</a>
+          <a class="new reg" href="#">Новая регистрация</a>
+          <button class="btn" type="submit">Войти</button>
+      </form>
+  </div>
+  <div class="modal-search">
+    <button class="modal-search-close" type="button" title="Закрыть"></button>
+     <form action="../catalog.html">
+      <label>
+          <input class="user-search" type="text" name="search" value="Что ищете?">
+      </label>
+      </form>
+  </div>
+  <div class="user-contact">
+       <button class="user-contact-close" type="button" title="Закрыть"></button>
+       <p>Мы обязательно вам ответим!</p>
+       <form class="contact-form" action="#" method="post">
+           <label>
+               <input class="name" type="text" name="name" placeholder="Как вас зовут?">
+           </label>
+           <label>
+               <input class="user-post" type="text" name="post" placeholder=" Ваша почта для ответа?">
+           </label>
+           <textarea class="comment" name="text" id="#" cols="45" rows="5" placeholder="Напишите что-нибудь...."></textarea>
+           <button class="contact-form-btn" type="submit">Отправить</button>
+       </form>
+  </div>
+
+   <script>
+      
+       var link = document.querySelector(".login");
+       var popup = document.querySelector(".modal-content");
+       var close = document.querySelector(".modal-content-close");
+       
+       link.addEventListener("click", function(event) {
+            event.preventDefault();
+            popup.classList.add("modal-content-show");
+       });
+       
+        close.addEventListener("click", function(event) {
+            event.preventDefault();
+            popup.classList.remove("modal-content-show");
+        });  
+      
+      var M = document.querySelector(".Magnifier");
+       var P = document.querySelector(".modal-search");
+       var C = document.querySelector(".modal-search-close");
+       
+       M.addEventListener("click", function(event) {
+           event.preventDefault();
+           P.classList.add("modal-search-show");
+       });
+       C.addEventListener("click", function(event) {
+           event.preventDefault();
+           P.classList.remove("modal-search-show");
+       });
+       
+       var findback = document.querySelector(".find-back");
+       var popupcontact = document.querySelector(".user-contact");
+       var popupcontactclose = document.querySelector(".user-contact-close");
+       
+       findback.addEventListener("click", function(event) {
+           event.preventDefault();
+           popupcontact.classList.add("user-contact-show");
+       });
+       
+       popupcontactclose.addEventListener("click", function(event) {
+           event.preventDefault();
+           popupcontact.classList.remove("user-contact-show")
+       });
+      </script>
     </body>
-</html>      
-               
-                 
-             
-          
-      
-      
-          
-           
-           
-          
-           
-            
-            
-            
-            
-             
-             
-             
-             
-          
-           
-                      
-             
-      
-
-
-
-  
-
+</html>
