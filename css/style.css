@@ -1021,7 +1021,7 @@ select{
     position: relative;
 }
 .assortment-item:hover::after{
-    content: "";
+    content: "мороженое с апельсиновым джемом";
     position: absolute; 
     left: 0%; top: 0%; 
     z-index: 1;
