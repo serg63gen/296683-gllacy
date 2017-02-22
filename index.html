@@ -8,43 +8,82 @@
     <title>HTML Academy: Глейси</title>
   </head>
   <body>
-
      <input type="radio" id="btn-1" name="toggle" checked>
     <input type="radio" id="btn-2" name="toggle">
     <input type="radio" id="btn-3" name="toggle">
     <div class="site-wrapper">
       <div class="content-wrapper">
-  <header class="main-header">
-     <div class="container clearfix">
-         <nav class="main-navigation">
-             <img class="header-logo" src="img/Logo.png" alt="логотип магазина" height="64" width="154">
-             <ul class="top-menu">
-                 <li class="catalog-top">
-                     <a href="../catalog.html">Каталог</a>
-                     <ul class="sub-menu">
-                         <li><a href="#">Новинки</a></li>
-                         <li><a href="#">Сливочное</a></li>
-                         <li><a href="#">Щербеты</a></li>
-                         <li><a href="#">Фруктовый лед</a></li>
-                         <li><a href="#">Меларин</a></li>
-                     </ul>
-                 </li>
-                 <li>
-                     <a href="#">Доставка и оплата</a>
-                 </li>
-                 <li>
-                     <a href="#">О Компании</a>
-                 </li>
-             </ul>
-         </nav>
-          <div class="user-block">
-                <a class="Magnifier " href="#"></a>
-                  <a class="login" href="#">Вход</a>
-                  <a  class="basket" href="#">Пусто</a>
-              <p>С 10 до 20, ежедневно<br><span>8 812 450-25-25</span></p>
-      </div>
-     </div>
-  </header>  
+<!--header-->
+ <header class="main-header">
+        <div class="container clearfix">
+          <div class="logo">
+              <img src="img/Logo.png" width="154" height="64" alt="магазин">
+          </div>
+          <nav class="main-navigation">
+            <ul class="main-menu">
+              <li class="sub-menu-container">
+                <a class="main-menu-unit catalog" href="catalog.html">Каталог</a>
+                <ul class="sub-menu">
+                  <li><a class="novelty" href="#">Новинки</a></li>
+                  <li><a href="catalog.html" >Сливочное</a></li>
+                  <li><a href="#">Щербеты</a></li>
+                  <li><a href="#">Фруктовый лед</a></li>
+                  <li><a href="#">Мелорин</a></li>
+                </ul>
+              </li>
+              <li>
+                <a class="main-menu-unit" href="#">Доставка и оплата</a>
+              </li>
+              <li>
+                <a class="main-menu-unit" href="#">О Компании</a>
+              </li>
+            </ul>
+          </nav>
+            <div class="user-block">
+            <ul class="user-menu">
+              <li class="search-container">
+                <a class="search opened" href="#">Поиск</a>
+                <div class="search-field">
+                  <form class="input-form search-form" action="https://echo.htmlacademy.ru" method="get">
+                    <div class="input-wrapper search-input-wrapper">
+                      <input type="search" name="search" id="search" placeholder="Что ищем?">
+                      <label for="search"></label>
+                    </div>
+                  </form>
+                </div>
+              </li>
+              <li class="entrance-container">
+                <a class="login opened" href="#">Вход</a>
+                <div class="entrance">
+                  <form class="input-form login-form clearfix" action="https://echo.htmlacademy.ru" method="post">
+                    <div class="input-wrapper entrance-input-wrapper">
+                      <input type="email" name="login-email" id="login-email" placeholder="Электронная почта">
+                      <label for="login-email"></label>
+                    </div>
+                    <div class="input-wrapper entrance-input-wrapper">
+                      <input type="password" name="password" id="password" placeholder="Пароль">
+                      <label for="password"></label>
+                    </div>
+                    <input class="btn login-btn" type="submit" name="enter" value="Войти">
+                    <div class="restore-register">
+                      <a href="#">Забыли пароль?</a>
+                      <a href="#">Новая регистрация</a>
+                    </div>
+                  </form>
+                </div>
+              </li>
+              <li>
+                <a class="cart-empty" href="#">Пусто</a>
+              </li>
+            </ul>
+            <ul class="info">
+              <li class="time">С 10 до 20, ежедневно</li>
+              <li class="phone">8 812 450-25-25</li>
+            </ul>
+          </div>
+        </div>
+      </header>
+<!--         -->
     <div class="slider">
           <div class="slide" id="slide1">
             <div class="slide-title">Крем-брюле и пломбир<br> с малиновым джемом</div>
@@ -72,7 +111,7 @@
               <h2>Малинка даром!</h2>
               <p>При покупке 2 кг любого фруктового мороженного, добавим в ваш заказ банку малинового варенья бесплатно.</p>
                <form class="#" action="../catalog.html" method="get">
-                   <button type="submit">Хочу варенье!</button>
+                   <button class="btn" type="submit">Хочу варенье!</button>
                </form>
           </section>
           <section class="right">
@@ -80,7 +119,7 @@
              <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
              
               <form class="#" action="#" method="get">
-                   <button type="submit">Хочу шоколадки!</button>
+                   <button class="btn" type="submit">Хочу шоколадки!</button>
                </form>
           </section>
        </section>
@@ -96,6 +135,7 @@
              <b>380₽<span>/кг</span></b>
              <a href="#">Сливочно-кофейное с кусочками шоколада</a>
          </div>
+            
              
          <div class="hit-item3">
              <img src="img/hit.jpg" alt="logo-hit" width="61" height="61">
@@ -136,7 +176,7 @@
                      <label>
                      <input type="Email" name="email" value="электронная почта">
                      </label>
-                         <button type="submit" form="date">Отправить</button>
+                         <button class="btn" type="submit" form="date">Отправить</button>
                  </form>
              </section>
          </section>
@@ -145,53 +185,39 @@
                <p>Адрес главного офиса и офлайн магазина:<br><b>ул. Большая Конюшенная<br>19/8, Санкт-Петербург</b></p>
                 <p>Для заказов по телефону<br><b>8 812 450-25-25</b><br>(с 10 до 20 ежедневно)</p>
                 <form action="#" method="get">
-                    <button class="find-back" type="submit">Форма обратной связи</button>
+                    <button class="btn find-back" type="submit">Форма обратной связи</button>
                 </form>
                 </div>
           </section>
   </main>    
- <footer class="main-footer">
-     <div class="container clearfix">
-         <section class="footer-social">
-              <a class="social-btn social-btn-tv" href="#">Твиттер</a>
-               <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
-                <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-                <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
-         </section>
-         <section class="footer-info">
-                     <a class="one" href="#">Для поставщиков</a>
-                     <a class="three" href="#">Наши документы</a>
-                     <a class="two" href="#">О призводстве</a>
-                     <a class="four" href="#">Экологические стандарты</a>
-         </section>
-         <section class="footer-copyright">
-<img src="img/logofooter.png" alt="" width="108" height="38">
-             <p>Сделано в <a href="#">HTML Academy</a> © 2017</p>
-         </section>
-     </div>
- </footer> 
-  <div class="modal-content">
-      <button class="modal-content-close" type="button" title="Закрыть"></button>
-      <form class="login-form" action="#" method="post">
-          <label>
-              <input class="user-email" type="email" name="email">
-          </label>
-          <label>
-              <input class="user-password" type="password" name="password">
-          </label>
-          <a class="restore" href="#">Забыли пароль?</a>
-          <a class="new reg" href="#">Новая регистрация</a>
-          <button class="btn" type="submit">Войти</button>
-      </form>
-  </div>
-  <div class="modal-search">
-    <button class="modal-search-close" type="button" title="Закрыть"></button>
-     <form action="../catalog.html">
-      <label>
-          <input class="user-search" type="text" name="search" value="Что ищете?">
-      </label>
-      </form>
-  </div>
+  <footer class="main-footer">
+        <div class="container clearfix">
+          <div class="footer-social">
+            <a class="social-btn social-btn-tv" href="#">Твиттер</a>
+            <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+            <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+            <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+          </div>
+          <div class="footer-information">
+            <ul class="info info-left">
+              <li><a href="#">Для поставщиков</a></li>
+              <li><a href="#">О производстве</a></li>
+            </ul>
+            <ul class="info info-right">
+              <li><a href="#">Наши документы</a><li>
+              <li><a href="#">Экологические стандарты</a><li>
+            </ul>
+          </div>
+          <div class="footer-copyright">
+            <a class="footer-logo" href="#">
+              <img src="img/logofooter.png" width="108" height="38" alt="htmlacademy">
+            </a>
+            <p>Сделано в <a class="company-name" href="#">HTML Academy</a> © 2016</p>
+          </div>
+        </div>
+      </footer>
+
+ 
   <div class="user-contact">
        <button class="user-contact-close" type="button" title="Закрыть"></button>
        <p>Мы обязательно вам ответим!</p>
@@ -206,36 +232,7 @@
            <button class="contact-form-btn" type="submit">Отправить</button>
        </form>
   </div>
-
    <script>
-      
-       var link = document.querySelector(".login");
-       var popup = document.querySelector(".modal-content");
-       var close = document.querySelector(".modal-content-close");
-       
-       link.addEventListener("click", function(event) {
-            event.preventDefault();
-            popup.classList.add("modal-content-show");
-       });
-       
-        close.addEventListener("click", function(event) {
-            event.preventDefault();
-            popup.classList.remove("modal-content-show");
-        });  
-      
-      var M = document.querySelector(".Magnifier");
-       var P = document.querySelector(".modal-search");
-       var C = document.querySelector(".modal-search-close");
-       
-       M.addEventListener("click", function(event) {
-           event.preventDefault();
-           P.classList.add("modal-search-show");
-       });
-       C.addEventListener("click", function(event) {
-           event.preventDefault();
-           P.classList.remove("modal-search-show");
-       });
-       
        var findback = document.querySelector(".find-back");
        var popupcontact = document.querySelector(".user-contact");
        var popupcontactclose = document.querySelector(".user-contact-close");
@@ -252,3 +249,9 @@
       </script>
     </body>
 </html>
+
+      
+
+      
+
+       
